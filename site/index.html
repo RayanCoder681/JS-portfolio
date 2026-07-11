@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayan Diatsa | Portfolio Blueprint</title>
+  <meta name="description" content="Portfolio personnel de Rayan Diatsa, etudiant ingenieur, realise dans un style Blueprint Minimalist avec sections accessibles par ancres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#accueil">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <div class = "photo_name">
+      <img src="./assets/images/photo_cv_Crop.jpg" alt="Photo_cv" class = "photo1">
+      <a href="#accueil" class="logo">Portfolio<span>.Eng</span></a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Ouvrir le menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#apropos">A propos</a></li>
+        <li><a href="#competences">Competences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="accueil">
+      <p class="eyebrow">ETUDIANT INGENIEUR / IA / WEB</p>
+      <h1>Etudiant ingenieur a l'ENSPY, je construis des experiences web claires et rigoureuses.</h1>
+      <p class="lead">
+        Bienvenue dans mon portfolio personnel. Je m'interesse a l'intelligence artificielle,
+        au machine learning et au developpement web avec une approche orientee structure,
+        lisibilite et experience utilisateur.
+      </p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+      <p class="terminal-note">rayan@enspy:~$ status --focus "portfolio blueprint minimalist"</p>
+    </section>
+
+    <section class="section section-alt" id="apropos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">01 / A PROPOS</p>
+          <h2>Parcours academique, stage et orientation professionnelle.</h2>
+        </div>
+        <div class="split-grid">
+          <div class="wireframe-box" aria-hidden="true"></div>
+          <div class="stack-text">
+            <p>
+              Je suis Rayan Diatsa, etudiant ingenieur a l'Ecole Nationale Superieure
+              Polytechnique de Yaounde. Ma formation m'a permis de consolider des bases en
+              mathematiques appliquees, systemes techniques, programmation et resolution de problemes.
+            </p>
+            <p>
+              Au cours de mon parcours, j'ai participe a des projets academiques et a un stage
+              d'application ou j'ai contribue a l'analyse de besoins, au developpement d'outils
+              numeriques et a la verification de solutions techniques.
+            </p>
+            <p>
+              Je developpe egalement des projets personnels en machine learning, data et web afin
+              de renforcer ma pratique et construire des produits utiles, accessibles et coherents.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-grid">
+          <article class="card" data-reveal>
+            <p class="card-label">FORMATION</p>
+            <h3>ENSPY - Cycle ingenieur</h3>
+            <p>Formation scientifique et technique avec projets academiques en electronique, programmation et analyse.</p>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">STAGE</p>
+            <h3>Stage d'application</h3>
+            <p>Participation a la digitalisation de processus, aux tests de solutions et a la documentation technique.</p>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">OBJECTIF</p>
+            <h3>IA responsable et web moderne</h3>
+            <p>Concevoir des interfaces lisibles et des systemes intelligents orientes usage et qualite.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="competences">
+      <div class="section-head">
+        <p class="eyebrow">02 / COMPETENCES</p>
+        <h2>Competences techniques, qualite et certifications.</h2>
+      </div>
+      <div class="bento-grid">
+        <article class="bento-card bento-card--medium">
+          <p class="card-label">IA &amp; DATA</p>
+          <h3>Analyse et modelisation</h3>
+          <div class="skills-bars" aria-label="Competences IA et Data">
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Python</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--indigo" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Machine Learning</span><span class="skill-bar__pct">75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--indigo" style="--pct:75%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">NumPy</span><span class="skill-bar__pct">80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--indigo" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Pandas</span><span class="skill-bar__pct">70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--indigo" style="--pct:70%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Matplotlib</span><span class="skill-bar__pct">75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--indigo" style="--pct:75%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">SciPy</span><span class="skill-bar__pct">65%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--indigo" style="--pct:65%"></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="bento-card bento-card--small">
+          <p class="card-label">WEB</p>
+          <h3>Front-end responsive</h3>
+          <div class="skills-bars" aria-label="Competences Web">
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">HTML semantique</span><span class="skill-bar__pct">90%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--teal" style="--pct:90%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">CSS (Flex/Grid)</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--teal" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">JavaScript</span><span class="skill-bar__pct">80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--teal" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Responsive</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--teal" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">A11y</span><span class="skill-bar__pct">70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--teal" style="--pct:70%"></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="bento-card bento-card--small">
+          <p class="card-label">QUALITE</p>
+          <h3>UI/UX et accessibilite</h3>
+          <div class="skills-bars" aria-label="Competences qualite">
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">UI/UX</span><span class="skill-bar__pct">75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--violet" style="--pct:75%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Checklist qualite</span><span class="skill-bar__pct">70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--violet" style="--pct:70%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Ecoconception</span><span class="skill-bar__pct">70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--violet" style="--pct:70%"></div></div>
+            </div>
+            <div class="skill-bar" data-reveal>
+              <div class="skill-bar__header"><span class="skill-bar__name">Tests multi-ecrans</span><span class="skill-bar__pct">75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill skill-bar__fill--violet" style="--pct:75%"></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="bento-card bento-card--large">
+          <p class="card-label">CERTIFICATIONS</p>
+          <h3>Apprentissage continu</h3>
+          <div class="cert-list">
+            <article class="cert-item">
+              <p class="cert-title">Google Cloud GenAI Leader Certification <span class="bento-card__tag">Udemy</span></p>
+              <p class="cert-meta">Udemy · 19 Jan 2026 · 1.5h</p>
+              <p class="cert-desc">
+                Atteste de la completion du programme “Google Cloud GenAI Leader Certification: Complete Training”
+                et des bases pour piloter des cas d'usage GenAI sur Google Cloud.
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">NumPy, SciPy, Matplotlib & Pandas A-Z <span class="bento-card__tag">Udemy</span></p>
+              <p class="cert-meta">Udemy · 18 Feb 2026 · 6.5h</p>
+              <p class="cert-desc">
+                Formation orientee pratique sur l'utilisation des bibliotheques Python pour la data et
+                le Machine Learning (manipulation, calcul scientifique, visualisation).
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">Start Writing Prompts like a Pro <span class="bento-card__tag">Coursera</span></p>
+              <p class="cert-meta">Coursera (Google) · 08 Apr 2026</p>
+              <p class="cert-desc">
+                Couvre l'art de rediger des prompts efficaces : structure, contexte, contraintes et iteration.
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">Formation au Machine Learning (AI Cell) <span class="bento-card__tag">AI Cell</span></p>
+              <p class="cert-meta">Cellule IA · 21 Mar 2026</p>
+              <p class="cert-desc">
+                Certificat de participation apres une session de formation ML (concepts clefs, exercices et echanges).
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">Certifications Claude (Anthropic) <span class="bento-card__tag">Anthropic</span></p>
+              <p class="cert-meta">Claude Code 101 · Claude Skills · Claude SubAgents</p>
+              <p class="cert-desc">
+                Series de certificats validant l'usage de Claude pour le dev (workflow code),
+                les competences avancees et l'organisation du travail via des subagents.
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">Google Prompting Essentials <span class="bento-card__tag">Coursera / Google</span></p>
+              <p class="cert-meta">Coursera (Google) · 2026</p>
+              <p class="cert-desc">
+                Creation de prompts efficaces, amelioration des interactions avec les modeles IA
+                et utilisation de l'IA generative pour la productivite.
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">Google Cloud / Generative AI Learning Path <span class="bento-card__tag">Google Cloud</span></p>
+              <p class="cert-meta">Google Cloud · 2026</p>
+              <p class="cert-desc">
+                Concepts fondamentaux du cloud applique a l'IA, architecture d'applications IA modernes
+                et decouverte des services cloud pour solutions intelligentes.
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">TRI AI Saturdays Cohort 10 — Google DeepMind <span class="bento-card__tag">AI Research</span></p>
+              <p class="cert-meta">TRI AI Saturdays · 2026</p>
+              <p class="cert-desc">
+                Fondements de la recherche IA : tokenization, embeddings, gradient descent,
+                backpropagation, attention mechanism et small language models.
+              </p>
+            </article>
+            <article class="cert-item">
+              <p class="cert-title">Yaounde Mobility Prediction Hackathon <span class="bento-card__tag">Hackathon</span></p>
+              <p class="cert-meta">Participation · 2026</p>
+              <p class="cert-desc">
+                Participation a un hackathon autour de la prediction de mobilite (exploration de donnees, modelisation et restitution).
+              </p>
+            </article>
+          </div>
+          <p class="cert-more">
+            <a class="text-link" href="https://drive.google.com/drive/folders/1kORgFqbQaflCOUhAYkX9rMkRKST3f94J" target="_blank" rel="noreferrer">
+              Voir toutes mes certifications
+            </a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projets">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">03 / PROJETS</p>
+          <h2>Projets recents et experimentation personnelle.</h2>
+        </div>
+        <div class="cards-grid three-cols">
+          <article class="card project-card" data-accent="indigo" data-reveal>
+            <div class="wireframe-thumb" aria-hidden="true"></div>
+            <p class="card-label">PYTHON / ML</p>
+            <h3>ML from scratch</h3>
+            <p>Implementation d'algorithmes pour comprendre les bases mathematiques de l'apprentissage automatique.</p>
+          </article>
+          <article class="card project-card" data-accent="teal" data-reveal>
+            <div class="wireframe-thumb" aria-hidden="true"></div>
+            <p class="card-label">HTML / CSS / JS</p>
+            <h3>Portfolio Blueprint</h3>
+            <p>Conception d'un portfolio minimaliste, responsive et structure autour d'une navigation par ancres.</p>
+          </article>
+          <article class="card project-card" data-accent="violet" data-reveal>
+            <div class="wireframe-thumb" aria-hidden="true"></div>
+            <p class="card-label">DATA</p>
+            <h3>Dashboard de visualisation</h3>
+            <p>Presentation claire d'indicateurs et de resultats pour faciliter l'analyse et la decision.</p>
+          </article>
+        </div>
+        <p class="section-cta">
+          <a href="projects.html" class="btn btn-primary">Page projets detaillee</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="section-head">
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Discutons d'une collaboration ou d'un projet.</h2>
+        <p>Le formulaire est valide cote front-end et reste coherent avec la demarche qualite demandee.</p>
+      </div>
+      <div class="contact-links">
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/rayan-diatsa-0a539734a" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/RayanCoder681/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group" id="fieldNom">
+          <label class="form-label" for="nom">Nom complet</label>
+          <input class="form-input" type="text" id="nom" name="nom" autocomplete="name" placeholder="Votre nom" required>
+          <p class="error">Merci d'indiquer votre nom.</p>
+        </div>
+        <div class="form-group" id="fieldEmail">
+          <label class="form-label" for="email">Adresse e-mail</label>
+          <input class="form-input" type="email" id="email" name="email" autocomplete="email" placeholder="nom@exemple.com" required>
+          <p class="error">Merci d'indiquer une adresse e-mail valide.</p>
+        </div>
+        <div class="form-group" id="fieldMessage">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Decrivez votre besoin..." required></textarea>
+          <p class="error">Merci de saisir un message d'au moins 10 caracteres.</p>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">Portfolio - Rayan Diatsa · 2026</p>
+      <div class="footer-links" aria-label="Liens rapides">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">A propos</a>
+        <a href="#competences">Competences</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/RayanCoder681/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/rayan-diatsa-0a539734a" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
