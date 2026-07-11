@@ -54,7 +54,9 @@
           <h2>Parcours academique, stage et orientation professionnelle.</h2>
         </div>
         <div class="split-grid">
-          <div class="wireframe-box" aria-hidden="true"></div>
+          <div class="about-image-wrapper">
+            <img src="assets/images/photo_cv_Crop.jpg" alt="Rayan Diatsa" class="about-image">
+          </div>
           <div class="stack-text">
             <p>
               Je suis Rayan Diatsa, etudiant ingenieur a l'Ecole Nationale Superieure
@@ -72,22 +74,38 @@
             </p>
           </div>
         </div>
-        <div class="timeline-grid">
-          <article class="card" data-reveal>
-            <p class="card-label">FORMATION</p>
-            <h3>ENSPY - Cycle ingenieur</h3>
-            <p>Formation scientifique et technique avec projets academiques en electronique, programmation et analyse.</p>
-          </article>
-          <article class="card" data-reveal>
-            <p class="card-label">STAGE</p>
-            <h3>Stage d'application</h3>
-            <p>Participation a la digitalisation de processus, aux tests de solutions et a la documentation technique.</p>
-          </article>
-          <article class="card" data-reveal>
-            <p class="card-label">OBJECTIF</p>
-            <h3>IA responsable et web moderne</h3>
-            <p>Concevoir des interfaces lisibles et des systemes intelligents orientes usage et qualite.</p>
-          </article>
+        <div class="timeline" aria-label="Mon parcours">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot timeline-dot--indigo"></div>
+            <div class="timeline-date">2026 - PRÉSENT</div>
+            <article class="timeline-card card" data-accent="indigo">
+              <p class="card-label">FORMATION</p>
+              <h3>ENSPY - Cycle ingénieur</h3>
+              <p>Formation scientifique et technique avec projets académiques en électronique, programmation et analyse.</p>
+            </article>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot timeline-dot--teal"></div>
+            <div class="timeline-date">2027</div>
+            <article class="timeline-card card" data-accent="teal">
+              <p class="card-label">STAGE</p>
+              <h3>Stage d'application</h3>
+              <p>Participation à la digitalisation de processus, aux tests de solutions et à la documentation technique.</p>
+            </article>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot timeline-dot--violet"></div>
+            <div class="timeline-date">AVENIR / OBJECTIF</div>
+            <article class="timeline-card card" data-accent="violet">
+              <p class="card-label">OBJECTIF</p>
+              <h3>IA responsable et web moderne</h3>
+              <p>Concevoir des interfaces lisibles et des systèmes intelligents orientés usage, éthique et qualité.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -189,7 +207,7 @@
               </p>
             </article>
             <article class="cert-item">
-              <p class="cert-title">NumPy, SciPy, Matplotlib & Pandas A-Z <span class="bento-card__tag">Udemy</span></p>
+              <p class="cert-title"><a href="assets/certifications/Certification Numpy UDEMY.jpg" target="_blank" rel="noopener noreferrer">NumPy, SciPy, Matplotlib &amp; Pandas A-Z</a> <span class="bento-card__tag">Udemy</span></p>
               <p class="cert-meta">Udemy · 18 Feb 2026 · 6.5h</p>
               <p class="cert-desc">
                 Formation orientee pratique sur l'utilisation des bibliotheques Python pour la data et
@@ -197,21 +215,21 @@
               </p>
             </article>
             <article class="cert-item">
-              <p class="cert-title">Start Writing Prompts like a Pro <span class="bento-card__tag">Coursera</span></p>
+              <p class="cert-title"><a href="assets/certifications/Coursera prompt_like_A_pro.pdf" target="_blank" rel="noopener noreferrer">Start Writing Prompts like a Pro</a> <span class="bento-card__tag">Coursera</span></p>
               <p class="cert-meta">Coursera (Google) · 08 Apr 2026</p>
               <p class="cert-desc">
                 Couvre l'art de rediger des prompts efficaces : structure, contexte, contraintes et iteration.
               </p>
             </article>
             <article class="cert-item">
-              <p class="cert-title">Formation au Machine Learning (AI Cell) <span class="bento-card__tag">AI Cell</span></p>
+              <p class="cert-title"><a href="assets/certifications/Copy of Certif ML TRAINING Session.pdf" target="_blank" rel="noopener noreferrer">Formation au Machine Learning (AI Cell)</a> <span class="bento-card__tag">AI Cell</span></p>
               <p class="cert-meta">Cellule IA · 21 Mar 2026</p>
               <p class="cert-desc">
                 Certificat de participation apres une session de formation ML (concepts clefs, exercices et echanges).
               </p>
             </article>
             <article class="cert-item">
-              <p class="cert-title">Certifications Claude (Anthropic) <span class="bento-card__tag">Anthropic</span></p>
+              <p class="cert-title"><a href="assets/certifications/Certif Claude Code 101.pdf" target="_blank" rel="noopener noreferrer">Certifications Claude (Anthropic)</a> <span class="bento-card__tag">Anthropic</span></p>
               <p class="cert-meta">Claude Code 101 · Claude Skills · Claude SubAgents</p>
               <p class="cert-desc">
                 Series de certificats validant l'usage de Claude pour le dev (workflow code),
@@ -267,19 +285,25 @@
         </div>
         <div class="cards-grid three-cols">
           <article class="card project-card" data-accent="indigo" data-reveal>
-            <div class="wireframe-thumb" aria-hidden="true"></div>
+            <div class="wireframe-thumb" aria-hidden="true">
+              <img src="assets/images/ml_from_scratch.jpg" alt="Algorithmes de ML from scratch" class="project-card__img">
+            </div>
             <p class="card-label">PYTHON / ML</p>
             <h3>ML from scratch</h3>
             <p>Implementation d'algorithmes pour comprendre les bases mathematiques de l'apprentissage automatique.</p>
           </article>
           <article class="card project-card" data-accent="teal" data-reveal>
-            <div class="wireframe-thumb" aria-hidden="true"></div>
+            <div class="wireframe-thumb" aria-hidden="true">
+              <img src="assets/images/portfolio_blueprint.jpg" alt="Conception du portfolio Blueprint" class="project-card__img">
+            </div>
             <p class="card-label">HTML / CSS / JS</p>
             <h3>Portfolio Blueprint</h3>
             <p>Conception d'un portfolio minimaliste, responsive et structure autour d'une navigation par ancres.</p>
           </article>
           <article class="card project-card" data-accent="violet" data-reveal>
-            <div class="wireframe-thumb" aria-hidden="true"></div>
+            <div class="wireframe-thumb" aria-hidden="true">
+              <img src="assets/images/dashboard_visualisation.jpg" alt="Dashboard de visualisation de données" class="project-card__img">
+            </div>
             <p class="card-label">DATA</p>
             <h3>Dashboard de visualisation</h3>
             <p>Presentation claire d'indicateurs et de resultats pour faciliter l'analyse et la decision.</p>

@@ -409,38 +409,185 @@ textarea:focus-visible {
   margin-bottom: 0;
 }
 
-.wireframe-box {
+.about-image-wrapper {
+  position: relative;
   min-height: 280px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   background-color: var(--surface);
-  /* dot grid pattern */
-  background-image:
-    radial-gradient(circle, var(--border) 1.2px, transparent 1.2px);
-  background-size: 20px 20px;
-  position: relative;
   overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  aspect-ratio: 1 / 1.05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.wireframe-box::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40%;
-  background: linear-gradient(to top, var(--surface), transparent);
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: block;
+}
+
+.about-image-wrapper:hover .about-image {
+  transform: scale(1.05);
 }
 
 /* ====================================================
-   TIMELINE GRID (À propos cards)
+   TIMELINE (À propos)
    ==================================================== */
 
-.timeline-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+.timeline {
+  position: relative;
+  max-width: 750px;
+  margin: 3.5rem auto 0;
+  padding-left: 2.5rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--primary) 0%, var(--teal) 50%, var(--violet) 100%);
+  border-radius: 999px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: calc(-2.5rem + 8px);
+  top: 22px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--primary);
+  z-index: 2;
+  box-shadow: 0 0 0 5px var(--background);
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+}
+
+.timeline-dot--indigo {
+  border-color: var(--primary);
+}
+
+.timeline-dot--teal {
+  border-color: var(--teal);
+}
+
+.timeline-dot--violet {
+  border-color: var(--violet);
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: translate(-50%, -50%) scale(1.3);
+  background: var(--primary);
+}
+
+.timeline-item:hover .timeline-dot--teal {
+  background: var(--teal);
+}
+
+.timeline-item:hover .timeline-dot--violet {
+  background: var(--violet);
+}
+
+.timeline-date {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-soft);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.timeline-card {
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-card[data-accent="indigo"] {
+  border-left: 4px solid var(--primary);
+}
+
+.timeline-card[data-accent="teal"] {
+  border-left: 4px solid var(--teal);
+}
+
+.timeline-card[data-accent="violet"] {
+  border-left: 4px solid var(--violet);
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ─── Horizontal Timeline on Desktop ─── */
+@media (min-width: 901px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-left: 0;
+    padding-top: 2.5rem;
+    max-width: 100%;
+  }
+
+  .timeline-line {
+    left: 0;
+    right: 0;
+    top: 8px;
+    bottom: auto;
+    width: auto;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary) 0%, var(--teal) 50%, var(--violet) 100%);
+  }
+
+  .timeline-item {
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: 24px;
+    top: 8px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline-item:hover .timeline-dot {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+
+  .timeline-card {
+    border-left: 1px solid var(--border);
+    border-top: 4px solid var(--border);
+  }
+
+  .timeline-card[data-accent="indigo"] {
+    border-top-color: var(--primary);
+  }
+
+  .timeline-card[data-accent="teal"] {
+    border-top-color: var(--teal);
+  }
+
+  .timeline-card[data-accent="violet"] {
+    border-top-color: var(--violet);
+  }
 }
 
 /* ====================================================
@@ -562,6 +709,21 @@ textarea:focus-visible {
   overflow: hidden;
 }
 
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card:hover .project-card__img {
+  transform: scale(1.06);
+}
+
 .project-card[data-accent="teal"] .wireframe-thumb {
   background-image:
     radial-gradient(circle, rgba(31, 138, 112, 0.1) 1.2px, transparent 1.2px);
@@ -586,6 +748,7 @@ textarea:focus-visible {
   padding: 3px 8px;
   background: rgba(255, 255, 255, 0.85);
   border-radius: var(--radius-pill);
+  z-index: 2;
 }
 
 /* ====================================================
@@ -740,6 +903,18 @@ textarea:focus-visible {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+
+.cert-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.cert-title a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .cert-title::before {
@@ -1155,7 +1330,6 @@ textarea:focus-visible {
   .cards-grid.two-cols,
   .cards-grid.three-cols,
   .cards-grid.four-cols,
-  .timeline-grid,
   .split-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1207,9 +1381,16 @@ textarea:focus-visible {
   .cards-grid.two-cols,
   .cards-grid.three-cols,
   .cards-grid.four-cols,
-  .timeline-grid,
   .split-grid {
     grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.8rem;
+  }
+
+  .timeline-dot {
+    left: calc(-1.8rem + 8px);
   }
 
   .hero,

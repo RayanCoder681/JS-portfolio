@@ -50,8 +50,8 @@ function initActiveSectionLinks() {
       });
     },
     {
-      rootMargin: "-35% 0px -50% 0px",
-      threshold: 0.1
+      rootMargin: "-25% 0px -45% 0px",
+      threshold: 0.15
     }
   );
 
